@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-midnight: #0F1923;
+  --color-signal-orange: #FF6B35;
+  --color-bone: #F5F0EB;
+  --color-clear-blue: #2D9CDB;
+  --color-action-green: #27AE60;
+  --color-warm-yellow: #F2C94C;
+  --color-card-dark: #1A2B3C;
+  --font-display: var(--font-syne);
+  --font-body: var(--font-libre-baskerville);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-midnight);
+  color: var(--color-bone);
+  font-family: var(--font-body), Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  line-height: 1.2;
+}
+
+/* Card expand/collapse animation using grid trick */
+.card-expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-expandable.expanded {
+  grid-template-rows: 1fr;
+}
+
+.card-expandable > div {
+  overflow: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-midnight);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-signal-orange);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8f5e;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(255, 107, 53, 0.4);
+  color: var(--color-bone);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-signal-orange);
+  outline-offset: 2px;
+}
+
+/* Civic gauge pulse */
+@keyframes gauge-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.gauge-pulse {
+  animation: gauge-pulse 3s ease-in-out infinite;
+}
+
+/* Card hover glow */
+.card-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.1), 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 107, 53, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Smooth tier transitions */
+.tier-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: tier-fade-in 0.6s ease forwards;
+}
+
+@keyframes tier-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
