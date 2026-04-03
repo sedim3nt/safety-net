@@ -2,7 +2,7 @@
 
 @theme inline {
   --color-midnight: #0F1923;
-  --color-signal-orange: #FF6B35;
+  --color-signal-blue: #3182BD;
   --color-bone: #F5F0EB;
   --color-clear-blue: #2D9CDB;
   --color-action-green: #27AE60;
@@ -53,23 +53,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-signal-orange);
+  background: var(--color-signal-blue);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff8f5e;
+  background: #5DA3D9;
 }
 
 /* Selection color */
 ::selection {
-  background: rgba(255, 107, 53, 0.4);
+  background: rgba(49, 130, 189, 0.4);
   color: var(--color-bone);
 }
 
 /* Focus styles */
 *:focus-visible {
-  outline: 2px solid var(--color-signal-orange);
+  outline: 2px solid var(--color-signal-blue);
   outline-offset: 2px;
 }
 
@@ -89,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-glow:hover {
-  box-shadow: 0 0 20px rgba(255, 107, 53, 0.1), 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-color: rgba(255, 107, 53, 0.3);
+  box-shadow: 0 0 20px rgba(49, 130, 189, 0.1), 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(49, 130, 189, 0.3);
   transform: translateY(-1px);
 }
 

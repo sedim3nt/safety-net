@@ -45,18 +45,18 @@ export function AgentDesigner() {
 
       <div>
         <label className="block text-xs text-[#F5F0EB]/50 mb-1 font-[family-name:var(--font-syne)] font-bold">What was your job?</label>
-        <input type="text" value={job} onChange={(e) => setJob(e.target.value)} placeholder="e.g. Senior Paralegal" className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#FF6B35] outline-none" />
+        <input type="text" value={job} onChange={(e) => setJob(e.target.value)} placeholder="e.g. Senior Paralegal" className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#3182BD] outline-none" />
       </div>
       <div>
         <label className="block text-xs text-[#F5F0EB]/50 mb-1 font-[family-name:var(--font-syne)] font-bold">What problems did you solve?</label>
-        <input type="text" value={problems} onChange={(e) => setProblems(e.target.value)} placeholder="e.g. contract review, compliance checks" className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#FF6B35] outline-none" />
+        <input type="text" value={problems} onChange={(e) => setProblems(e.target.value)} placeholder="e.g. contract review, compliance checks" className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#3182BD] outline-none" />
       </div>
       <div>
         <label className="block text-xs text-[#F5F0EB]/50 mb-1 font-[family-name:var(--font-syne)] font-bold">What do colleagues always ask you about?</label>
-        <input type="text" value={questions} onChange={(e) => setQuestions(e.target.value)} placeholder="e.g. how to format filings, deadline tracking" className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#FF6B35] outline-none" />
+        <input type="text" value={questions} onChange={(e) => setQuestions(e.target.value)} placeholder="e.g. how to format filings, deadline tracking" className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#3182BD] outline-none" />
       </div>
 
-      <button onClick={generate} className="bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors">
+      <button onClick={generate} className="bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors">
         Generate Agent Spec
       </button>
 

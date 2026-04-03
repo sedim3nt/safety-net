@@ -27,7 +27,7 @@ export function CopyButton({ text, label = "Copy to Clipboard" }: { text: string
   return (
     <button
       onClick={handleCopy}
-      className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+      className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
     >
       {copied ? <Check size={16} /> : <Copy size={16} />}
       {copied ? "Copied!" : label}

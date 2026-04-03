@@ -18,7 +18,7 @@ export function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="/"
-          className="font-[family-name:var(--font-syne)] text-lg font-extrabold tracking-wider text-[#F5F0EB] hover:text-[#FF6B35] transition-colors"
+          className="font-[family-name:var(--font-syne)] text-lg font-extrabold tracking-wider text-[#F5F0EB] hover:text-[#3182BD] transition-colors"
         >
           THE SAFETY NET
         </a>
@@ -29,7 +29,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-[#F5F0EB]/70 hover:text-[#FF6B35] transition-colors font-[family-name:var(--font-syne)] font-bold"
+              className="text-sm text-[#F5F0EB]/70 hover:text-[#3182BD] transition-colors font-[family-name:var(--font-syne)] font-bold"
             >
               {l.label}
             </a>
@@ -54,7 +54,7 @@ export function Nav() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block py-3 text-[#F5F0EB]/70 hover:text-[#FF6B35] transition-colors font-[family-name:var(--font-syne)] font-bold"
+              className="block py-3 text-[#F5F0EB]/70 hover:text-[#3182BD] transition-colors font-[family-name:var(--font-syne)] font-bold"
             >
               {l.label}
             </a>

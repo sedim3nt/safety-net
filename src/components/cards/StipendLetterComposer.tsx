@@ -69,7 +69,7 @@ export function StipendLetterComposer() {
       <select
         value={role}
         onChange={(e) => setRole(e.target.value)}
-        className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#FF6B35] outline-none"
+        className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#3182BD] outline-none"
       >
         <option value="">Choose your role...</option>
         <option value="employed">Currently Employed</option>

@@ -87,7 +87,7 @@ function TransitionCalculator() {
           value={revenue}
           onChange={(e) => setRevenue(e.target.value)}
           placeholder="e.g. 10000000"
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
       </div>
       <div className="space-y-2">
@@ -97,7 +97,7 @@ function TransitionCalculator() {
           value={aiGain}
           onChange={(e) => setAiGain(e.target.value)}
           placeholder="e.g. 30"
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
       </div>
       {revenueNum > 0 && gainNum > 0 && (
@@ -111,7 +111,7 @@ function TransitionCalculator() {
             ${taxRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
           </p>
           <p className="text-xs text-bone/50">Workers supported at $35K stipend</p>
-          <p className="font-display font-bold text-signal-orange">
+          <p className="font-display font-bold text-signal-blue">
             {workersSupported.toLocaleString()} workers
           </p>
         </div>
@@ -135,7 +135,7 @@ function ZipCodeLookup() {
           onChange={(e) => setZip(e.target.value.replace(/\D/g, "").slice(0, 5))}
           placeholder="Enter zip code"
           maxLength={5}
-          className="flex-1 bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="flex-1 bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
         <a
           href={zip.length === 5 ? `https://www.commoncause.org/find-your-representative/addr/?address=${zip}` : "#"}
@@ -143,7 +143,7 @@ function ZipCodeLookup() {
           rel="noopener noreferrer"
           className={`px-4 py-2 rounded-md text-sm font-display font-semibold transition-colors ${
             zip.length === 5
-              ? "bg-signal-orange text-midnight hover:bg-signal-orange/90"
+              ? "bg-signal-blue text-midnight hover:bg-signal-blue/90"
               : "bg-bone/10 text-bone/30 cursor-not-allowed"
           }`}
           onClick={(e) => { if (zip.length !== 5) e.preventDefault(); }}
@@ -183,13 +183,13 @@ function StoryForm() {
         onChange={(e) => setStory(e.target.value)}
         placeholder="Tell us what happened..."
         rows={4}
-        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none resize-none"
+        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none resize-none"
       />
       <button
         onClick={() => { if (story.trim()) setSubmitted(true); }}
         className={`px-4 py-2 rounded-md text-sm font-display font-semibold transition-colors ${
           story.trim()
-            ? "bg-signal-orange text-midnight hover:bg-signal-orange/90"
+            ? "bg-signal-blue text-midnight hover:bg-signal-blue/90"
             : "bg-bone/10 text-bone/30 cursor-not-allowed"
         }`}
       >
@@ -204,7 +204,7 @@ export default function Tier1() {
     <section id="tier-1" className="scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <span className="text-signal-orange font-display text-sm font-bold uppercase tracking-widest">
+          <span className="text-signal-blue font-display text-sm font-bold uppercase tracking-widest">
             Tier 1
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone mt-2">
@@ -225,7 +225,7 @@ export default function Tier1() {
               </p>
               <a
                 href="mailto:?subject=Request%20for%20AI%20Displacement%20Insurance%20Program&body=Dear%20Commissioner%2C%0A%0AI%20am%20writing%20to%20request%20that%20our%20state%20establish%20an%20AI%20Displacement%20Insurance%20program.%20As%20artificial%20intelligence%20automates%20an%20increasing%20number%20of%20jobs%2C%20workers%20need%20a%20dedicated%20insurance%20mechanism%20that%20provides%20income%20support%20during%20the%20transition.%0A%0AThis%20program%20should%3A%0A-%20Provide%206-12%20months%20of%20income%20replacement%20for%20AI-displaced%20workers%0A-%20Be%20funded%20by%20employer%20contributions%20proportional%20to%20AI%20automation%20levels%0A-%20Include%20mandatory%20retraining%20vouchers%0A%0AThank%20you%20for%20your%20attention%20to%20this%20critical%20issue.%0A%0ASincerely%2C%0A%5BYour%20Name%5D"
-                className="inline-flex items-center gap-2 bg-signal-orange text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-orange/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-signal-blue text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-blue/90 transition-colors"
               >
                 Open Email Template →
               </a>
@@ -238,7 +238,7 @@ export default function Tier1() {
               </p>
               <a
                 href="https://safetynet.spirittree.dev/petition"
-                className="inline-flex items-center gap-2 bg-signal-orange text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-orange/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-signal-blue text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-blue/90 transition-colors"
               >
                 Sign the Petition →
               </a>
@@ -311,7 +311,7 @@ export default function Tier1() {
               </p>
               <a
                 href={`mailto:?subject=${encodeURIComponent("Proposal for Worker Cooperative Conversion Policy")}&body=${encodeURIComponent(HR_EMAIL_TEMPLATE)}`}
-                className="inline-flex items-center gap-2 bg-signal-orange text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-orange/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-signal-blue text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-blue/90 transition-colors"
               >
                 Open Email Template →
               </a>

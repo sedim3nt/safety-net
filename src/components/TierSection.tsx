@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
 
 const accentColors: Record<string, string> = {
-  orange: "#FF6B35",
-  blue: "#2D9CDB",
+  blue: "#3182BD",
   green: "#27AE60",
 };
 
@@ -11,14 +10,14 @@ export function TierSection({
   tier,
   title,
   description,
-  accent = "orange",
+  accent = "blue",
   children,
 }: {
   id: string;
   tier: string;
   title: string;
   description: string;
-  accent?: "orange" | "blue" | "green";
+  accent?: "blue" | "blue" | "green";
   children: ReactNode;
 }) {
   const color = accentColors[accent];

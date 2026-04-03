@@ -79,7 +79,7 @@ export function ComplementFinder() {
       <select
         value={role}
         onChange={(e) => setRole(e.target.value)}
-        className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#FF6B35] outline-none"
+        className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#3182BD] outline-none"
       >
         <option value="">Select your current role...</option>
         {Object.keys(complements).map((r) => (

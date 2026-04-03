@@ -41,7 +41,7 @@ export function CareValueCalc() {
               next[i] = Number(e.target.value);
               setHours(next);
             }}
-            className="w-full accent-[#FF6B35]"
+            className="w-full accent-[#3182BD]"
           />
         </div>
       ))}

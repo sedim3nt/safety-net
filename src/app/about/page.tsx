@@ -58,7 +58,7 @@ export default function AboutPage() {
           </h2>
           <ul className="space-y-4">
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-bold font-[family-name:var(--font-syne)] shrink-0">
+              <span className="text-[#3182BD] font-bold font-[family-name:var(--font-syne)] shrink-0">
                 AI-Positive
               </span>
               <span>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-bold font-[family-name:var(--font-syne)] shrink-0">
+              <span className="text-[#3182BD] font-bold font-[family-name:var(--font-syne)] shrink-0">
                 Action-Oriented
               </span>
               <span>
@@ -78,7 +78,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-bold font-[family-name:var(--font-syne)] shrink-0">
+              <span className="text-[#3182BD] font-bold font-[family-name:var(--font-syne)] shrink-0">
                 No Ads
               </span>
               <span>
@@ -87,7 +87,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-bold font-[family-name:var(--font-syne)] shrink-0">
+              <span className="text-[#3182BD] font-bold font-[family-name:var(--font-syne)] shrink-0">
                 No Data Harvesting
               </span>
               <span>
@@ -110,7 +110,7 @@ export default function AboutPage() {
               href="https://spirittree.dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#ff8f5e] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#5DA3D9] transition-colors"
             >
               Visit SpiritTree →
             </a>

@@ -74,7 +74,7 @@ function CollectivePowerCalculator() {
           value={members}
           onChange={(e) => setMembers(e.target.value)}
           placeholder="e.g. 25"
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
       </div>
       <div className="space-y-2">
@@ -84,7 +84,7 @@ function CollectivePowerCalculator() {
           value={savings}
           onChange={(e) => setSavings(e.target.value)}
           placeholder="e.g. 50"
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
       </div>
       {membersNum > 0 && savingsNum > 0 && (
@@ -116,7 +116,7 @@ function CollectivePowerCalculator() {
               <p className="text-xs text-warm-yellow">✓ Seed a worker-owned cooperative</p>
             )}
             {totalAnnual >= 100000 && (
-              <p className="text-xs text-signal-orange font-semibold">✓ Launch a full cooperative business</p>
+              <p className="text-xs text-signal-blue font-semibold">✓ Launch a full cooperative business</p>
             )}
           </div>
         </div>
@@ -148,27 +148,27 @@ function GuildListingForm() {
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Guild name"
-        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
       />
       <input
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         placeholder="City, State"
-        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
       />
       <input
         type="text"
         value={focus}
         onChange={(e) => setFocus(e.target.value)}
         placeholder="Industry focus (e.g. Creative, Finance, Healthcare)"
-        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+        className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
       />
       <button
         onClick={() => { if (name.trim() && location.trim()) setSubmitted(true); }}
         className={`px-4 py-2 rounded-md text-sm font-display font-semibold transition-colors ${
           name.trim() && location.trim()
-            ? "bg-signal-orange text-midnight hover:bg-signal-orange/90"
+            ? "bg-signal-blue text-midnight hover:bg-signal-blue/90"
             : "bg-bone/10 text-bone/30 cursor-not-allowed"
         }`}
       >

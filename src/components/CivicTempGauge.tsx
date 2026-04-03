@@ -1,7 +1,7 @@
 export function CivicTempGauge({ percent, label }: { percent: number; label?: string }) {
   // Color gradient based on percent
   const getColor = (p: number) => {
-    if (p < 30) return "#FF6B35";
+    if (p < 30) return "#3182BD";
     if (p < 60) return "#F2C94C";
     return "#27AE60";
   };

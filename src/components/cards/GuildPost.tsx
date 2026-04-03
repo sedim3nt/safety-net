@@ -25,7 +25,7 @@ export function GuildPost() {
     );
   }
 
-  const inputCls = "w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#FF6B35] outline-none";
+  const inputCls = "w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] placeholder:text-[#F5F0EB]/30 focus:border-[#3182BD] outline-none";
 
   return (
     <div className="space-y-3">
@@ -37,7 +37,7 @@ export function GuildPost() {
       </div>
       <input type="email" placeholder="Contact Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputCls} />
       <textarea placeholder="Description" value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} rows={3} className={`${inputCls} resize-none`} />
-      <button onClick={handleSubmit} className="bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors">
+      <button onClick={handleSubmit} className="bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors">
         Post Guild Listing
       </button>
     </div>

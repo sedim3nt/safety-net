@@ -4,7 +4,7 @@ export function Hero() {
       <h1 className="font-[family-name:var(--font-syne)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] max-w-4xl mb-8 text-[#F5F0EB]">
         AI is inevitable.
         <br />
-        <span className="text-[#FF6B35]">A painful transition isn&apos;t.</span>
+        <span className="text-[#3182BD]">A painful transition isn&apos;t.</span>
       </h1>
 
       <p className="max-w-2xl text-lg md:text-xl text-[#F5F0EB]/80 mb-12 leading-relaxed">
@@ -18,7 +18,7 @@ export function Hero() {
 
       <a
         href="#tier-1"
-        className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-extrabold text-lg px-8 py-4 rounded-lg hover:bg-[#ff8f5e] transition-colors"
+        className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-extrabold text-lg px-8 py-4 rounded-lg hover:bg-[#5DA3D9] transition-colors"
       >
         Start Taking Action ↓
       </a>

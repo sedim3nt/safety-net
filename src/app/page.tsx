@@ -156,7 +156,7 @@ export default function Home() {
         tier="Tier 1"
         title="Income Bridging"
         description="Immediate actions to protect your income and push for systemic change. These tools work today."
-        accent="orange"
+        accent="blue"
       >
         {/* Column 1: AI Displacement Insurance */}
         <KanbanColumn title="AI Displacement Insurance" civicTemp={45}>
@@ -189,7 +189,7 @@ export default function Home() {
                 href="https://www.change.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
               >
                 Sign on Change.org →
               </a>
@@ -327,7 +327,7 @@ export default function Home() {
                 href="https://www.usworker.coop/directory/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
               >
                 Browse Co-op Directory →
               </a>
@@ -359,7 +359,7 @@ export default function Home() {
                 href="https://displacementindex.spirittree.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
               >
                 View Displacement Index →
               </a>
@@ -501,7 +501,7 @@ export default function Home() {
                 href="https://github.com/sedim3nt/spore"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-6 py-3 rounded-md hover:bg-[#ff8f5e] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-6 py-3 rounded-md hover:bg-[#5DA3D9] transition-colors"
               >
                 View Spore on GitHub →
               </a>
@@ -540,7 +540,7 @@ export default function Home() {
                 href="https://proofofcare.spirittree.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
               >
                 Attest on Proof of Care →
               </a>
@@ -580,7 +580,7 @@ export default function Home() {
                 href="https://proofofcare.spirittree.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
               >
                 Join the Network →
               </a>

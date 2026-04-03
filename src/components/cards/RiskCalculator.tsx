@@ -44,7 +44,7 @@ export function RiskCalculator() {
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#FF6B35] outline-none"
+          className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#3182BD] outline-none"
         >
           <option value="">Select your field...</option>
           {Object.keys(categories).map((c) => (
@@ -65,7 +65,7 @@ export function RiskCalculator() {
           max="30"
           value={experience}
           onChange={(e) => setExperience(Number(e.target.value))}
-          className="w-full accent-[#FF6B35]"
+          className="w-full accent-[#3182BD]"
         />
         <div className="flex justify-between text-xs text-[#F5F0EB]/30">
           <span>0</span>
@@ -76,7 +76,7 @@ export function RiskCalculator() {
 
       <button
         onClick={calculate}
-        className="bg-[#FF6B35] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#ff8f5e] transition-colors"
+        className="bg-[#3182BD] text-[#0F1923] font-[family-name:var(--font-syne)] font-bold text-sm px-4 py-2 rounded-md hover:bg-[#5DA3D9] transition-colors"
       >
         Calculate Risk Window
       </button>

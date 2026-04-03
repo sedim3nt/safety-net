@@ -132,7 +132,7 @@ function RevenueCalculator() {
         <select
           value={agentType}
           onChange={(e) => setAgentType(e.target.value)}
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone focus:border-signal-blue focus:outline-none"
         >
           {Object.entries(labels).map(([value, label]) => (
             <option key={value} value={value}>{label} (${rates[value]}/task)</option>
@@ -146,7 +146,7 @@ function RevenueCalculator() {
           value={dailyTasks}
           onChange={(e) => setDailyTasks(e.target.value)}
           placeholder="e.g. 20"
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
       </div>
       {tasksNum > 0 && (
@@ -165,7 +165,7 @@ function RevenueCalculator() {
           </div>
           <div>
             <p className="text-xs text-bone/50">Projected annual revenue</p>
-            <p className="font-display font-bold text-signal-orange">
+            <p className="font-display font-bold text-signal-blue">
               ${yearlyRevenue.toLocaleString()}
             </p>
           </div>
@@ -199,7 +199,7 @@ function CareValueCalculator() {
           value={hours}
           onChange={(e) => setHours(e.target.value)}
           placeholder="e.g. 30"
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
       </div>
       <div className="space-y-2">
@@ -207,7 +207,7 @@ function CareValueCalculator() {
         <select
           value={rate}
           onChange={(e) => setRate(e.target.value)}
-          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone focus:border-signal-orange focus:outline-none"
+          className="w-full bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone focus:border-signal-blue focus:outline-none"
         >
           <option value="18">Childcare ($18/hr)</option>
           <option value="25">Home Health Aide ($25/hr)</option>
@@ -264,13 +264,13 @@ function EmailSignupForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-orange focus:outline-none"
+          className="flex-1 bg-midnight border border-bone/20 rounded-md px-3 py-2 text-sm text-bone placeholder:text-bone/30 focus:border-signal-blue focus:outline-none"
         />
         <button
           onClick={() => { if (email.includes("@")) setSubmitted(true); }}
           className={`px-4 py-2 rounded-md text-sm font-display font-semibold transition-colors ${
             email.includes("@")
-              ? "bg-signal-orange text-midnight hover:bg-signal-orange/90"
+              ? "bg-signal-blue text-midnight hover:bg-signal-blue/90"
               : "bg-bone/10 text-bone/30 cursor-not-allowed"
           }`}
         >
@@ -320,7 +320,7 @@ export default function Tier3() {
                 href="https://github.com/sedim3nt/spore"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-signal-orange text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-orange/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-signal-blue text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-blue/90 transition-colors"
               >
                 View on GitHub →
               </a>
@@ -347,7 +347,7 @@ export default function Tier3() {
                 href="https://proofofcare.spirittree.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-signal-orange text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-orange/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-signal-blue text-midnight px-4 py-2 rounded-md text-sm font-display font-semibold hover:bg-signal-blue/90 transition-colors"
               >
                 Attest Your Care Work →
               </a>

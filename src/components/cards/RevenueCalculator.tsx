@@ -42,7 +42,7 @@ export function RevenueCalculator() {
 
       <div>
         <label className="block text-xs text-[#F5F0EB]/50 mb-1 font-[family-name:var(--font-syne)] font-bold">Agent Type</label>
-        <select value={type} onChange={(e) => setType(e.target.value)} className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#FF6B35] outline-none">
+        <select value={type} onChange={(e) => setType(e.target.value)} className="w-full bg-[#0F1923] border border-white/10 rounded-md px-3 py-2 text-sm text-[#F5F0EB] focus:border-[#3182BD] outline-none">
           <option value="">Select type...</option>
           {Object.keys(agentTypes).map((t) => <option key={t} value={t}>{t}</option>)}
         </select>
@@ -50,7 +50,7 @@ export function RevenueCalculator() {
 
       <div>
         <label className="block text-xs text-[#F5F0EB]/50 mb-1 font-[family-name:var(--font-syne)] font-bold">Daily Tasks: {tasks}</label>
-        <input type="range" min="1" max="50" value={tasks} onChange={(e) => setTasks(Number(e.target.value))} className="w-full accent-[#FF6B35]" />
+        <input type="range" min="1" max="50" value={tasks} onChange={(e) => setTasks(Number(e.target.value))} className="w-full accent-[#3182BD]" />
       </div>
 
       <div>
@@ -77,7 +77,7 @@ export function RevenueCalculator() {
           </div>
           <div className="border-t border-white/5 pt-1 flex justify-between text-sm">
             <span className="text-[#F5F0EB]/60">Net Monthly</span>
-            <span className={`font-bold ${profit > 0 ? "text-[#27AE60]" : "text-[#FF6B35]"}`}>
+            <span className={`font-bold ${profit > 0 ? "text-[#27AE60]" : "text-[#E74C3C]"}`}>
               ${profit.toLocaleString()}
             </span>
           </div>
