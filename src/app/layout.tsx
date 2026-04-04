@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Syne, Libre_Baskerville } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { AdvisorChat } from "@/components/AdvisorChat";
 import "./globals.css";
 
 const syne = Syne({
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <AdvisorChat />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import { ShareButtons } from "@/components/ShareButtons";
 import { RiskCalculator } from "@/components/cards/RiskCalculator";
 import { ShareStory } from "@/components/cards/ShareStory";
 import { StipendLetterComposer } from "@/components/cards/StipendLetterComposer";
+import { LetterComposer } from "@/components/LetterComposer";
 import { StipendMath } from "@/components/cards/StipendMath";
 import { SkillMapper, RepositioningPlan } from "@/components/cards/SkillMapper";
 import { ComplementFinder } from "@/components/cards/ComplementFinder";
@@ -226,7 +227,11 @@ export default function Home() {
             </div>
           </ActionCard>
 
-          <ActionCard icon="✉️" title="Compose a Letter">
+          <ActionCard icon="🤖" title="AI Letter Composer">
+            <LetterComposer />
+          </ActionCard>
+
+          <ActionCard icon="✉️" title="Quick Letter Templates">
             <StipendLetterComposer />
           </ActionCard>
 
