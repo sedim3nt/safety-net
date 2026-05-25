@@ -75,7 +75,7 @@ const careCreditsLetter = `Dear [Legislator],
 
 I am writing to advocate for legislation that would allow care work — childcare, elder care, community volunteering, mentoring, and organizing — to count toward Social Security credits.
 
-Currently, Americans who step away from paid employment to provide essential care work receive zero Social Security credit for that labor, despite performing work valued at over $600 billion annually in the United States. This policy effectively punishes the people who hold our communities together.
+Currently, Americans who step away from paid employment to provide essential care work receive zero Social Security credit for that labor, despite performing work valued at more than $1 trillion annually in the United States (National Partnership for Women & Families analysis of the BLS 2023 American Time Use Survey, 2024). This policy effectively punishes the people who hold our communities together.
 
 As AI displaces millions of knowledge workers over the coming decade, many will transition into care economy roles — the deeply human work that AI cannot replicate. If we fail to value this work in our social safety net, we create a perverse incentive: penalizing people for doing the most essential work in society.
 
@@ -245,10 +245,10 @@ export default function Home() {
                 Policy change requires critical mass. Share this with 5 people who need to see it.
               </p>
               <div className="bg-[#0F1923] border border-white/10 rounded-md p-3 text-xs text-[#F5F0EB]/60">
-                AI is about to restructure 30-40% of knowledge work tasks. There&apos;s no insurance for it, no transition stipend, no plan. The Safety Net built 36 free tools to fight back. Check it out:
+                By 2030, up to 30% of US work hours could be automated, accelerated by AI (McKinsey). There&apos;s no insurance for it, no transition stipend, no plan. The Safety Net built 36 free tools to fight back. Check it out:
               </div>
               <ShareButtons
-                text="AI is about to restructure 30-40% of knowledge work tasks. The Safety Net built 36 free tools to fight back."
+                text="By 2030, up to 30% of US work hours could be automated, accelerated by AI (McKinsey). The Safety Net built 36 free tools to fight back."
                 subject="This matters — The Safety Net"
               />
             </div>
